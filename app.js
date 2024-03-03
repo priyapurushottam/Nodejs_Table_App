@@ -1,13 +1,3 @@
-// var express = require('express');
-// var app = express();
-// app.get('/', function (req, res) {
-//   res.send('Hello World!');
-// });
-// app.listen(3000, function () {
-//   console.log('Example app listening on port 3000!');
-// });
-
-// server.js
 const express = require('express');
 const cors = require('cors');
 const app = express();
@@ -24,7 +14,7 @@ const { Pool } = require('pg');
 const pool = new Pool({
     user: 'postgres',
     host: 'localhost',
-    database: 'react_poc',
+    database: 'react_app',
     password: 'postgres',
     port: 5432, // default PostgreSQL port
 });
